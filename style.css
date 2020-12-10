@@ -90,15 +90,17 @@ nav .container{
 }
 
 .logo{
-    color: #fff;
+    color: rgb(2, 133, 2);
     font-size: 1.1rem;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
 .logo span{
     font-weight: 300;
+    color: #fff;
 }
 
 .hamburger-menu{
@@ -140,12 +142,13 @@ nav .container{
     position: absolute;
     z-index: 30;
     line-height: 4rem;
-    top: calc(50% - 2rem);
+    top: calc(40% - 2rem);
     width: 100%;
     text-align: center;
     font-size: 5rem;
     font-weight: 600;
     color: #fff;
+    text-shadow: 2px 2px 8px rgb(29, 28, 28) ;
 }
 
 section{
@@ -229,4 +232,31 @@ section .container > *{
     .title{
         font-size: 1.2rem;
     }
+}
+
+
+
+section .stats{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    box-shadow: 5px 5px 20px 1px #1f1d1e;
+    background: linear-gradient(rgba(15, 15, 15, 0.884), rgba(187, 184, 184, 0.212));
+    background-color: rgb(230, 53, 121);
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.stathead
+{
+    bottom: 9rem;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    position: relative;
+    color: papayawhip;
 }
