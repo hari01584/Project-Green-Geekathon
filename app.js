@@ -6,7 +6,7 @@ app.use(express.static('public'));
 // This responds with "Hello World" on the homepage
 app.get('/', function (req, res) {
    console.log("Got a GET request for the homepage");
-   res.sendFile( __dirname + "/" + "index.html" );
+   res.sendFile( __dirname + "/templates/" + "index.html" );
 })
 
 // This responds a POST request for the homepage
