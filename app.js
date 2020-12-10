@@ -1,34 +1,41 @@
-const translate = document.querySelectorAll(".translate");
-const big_title = document.querySelector(".big-title");
-const header = document.querySelector("header");
-const shadow = document.querySelector(".shadow");
-const content = document.querySelector(".content");
-const section = document.querySelector("section");
-const image_container = document.querySelector(".imgContainer");
-const opacity = document.querySelectorAll(".opacity");
-const border = document.querySelector(".border");
+var express = require('express');
+var app = express();
 
-let header_height = header.offsetHeight;
-let section_height = section.offsetHeight;
+app.use(express.static('public'));
 
-window.addEventListener('scroll', () => {
-    let scroll = window.pageYOffset;
-    let sectionY = section.getBoundingClientRect();
-    
-    translate.forEach(element => {
-        let speed = element.dataset.speed;
-        element.style.transform = `translateY(${scroll * speed}px)`;
-    });
+// This responds with "Hello World" on the homepage
+app.get('/', function (req, res) {
+   console.log("Got a GET request for the homepage");
+   res.sendFile( __dirname + "/" + "index.html" );
+})
 
-    opacity.forEach(element => {
-        element.style.opacity = scroll / (sectionY.top + section_height);
-    })
+// This responds a POST request for the homepage
+app.post('/', function (req, res) {
+   console.log("Got a POST request for the homepage");
+   res.send('Hello POST');
+})
 
-    big_title.style.opacity = - scroll / (header_height / 2) + 1;
-    shadow.style.height = `${scroll * 0.5 + 300}px`;
+// This responds a DELETE request for the /del_user page.
+app.delete('/del_user', function (req, res) {
+   console.log("Got a DELETE request for /del_user");
+   res.send('Hello DELETE');
+})
 
-    content.style.transform = `translateY(${scroll / (section_height + sectionY.top) * 50 - 50}px)`;
-    image_container.style.transform = `translateY(${scroll / (section_height + sectionY.top) * -50 + 50}px)`;
+// This responds a GET request for the /list_user page.
+app.get('/list_user', function (req, res) {
+   console.log("Got a GET request for /list_user");
+   res.send('Page Listing');
+})
 
-    border.style.width = `${scroll / (sectionY.top + section_height) * 30}%`;
+// This responds a GET request for abcd, abxcd, ab123cd, and so on
+app.get('/ab*cd', function(req, res) {
+   console.log("Got a GET request for /ab*cd");
+   res.send('Page Pattern Match');
+})
+
+var server = app.listen(3000, function () {
+   var host = server.address().address
+   var port = server.address().port
+
+   console.log("Example app listening at http://%s:%s", host, port)
 })
