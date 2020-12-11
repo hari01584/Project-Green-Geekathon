@@ -4,9 +4,15 @@ var app = express();
 app.use(express.static('public'));
 
 // This responds with "Hello World" on the homepage
-app.get('/', function (req, res) {
+app.get('/index', function (req, res) {
    console.log("Got a GET request for the homepage");
    res.sendFile( __dirname + "/templates/" + "index.html" );
+})
+
+
+app.get('/donateus', function (req, res) {
+   console.log("Got a GET request for the homepage");
+   res.sendFile( __dirname + "/templates/" + "donateus.html" );
 })
 
 // This responds a POST request for the homepage
