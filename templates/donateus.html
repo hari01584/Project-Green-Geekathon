@@ -11,22 +11,22 @@
   <div class="qfc-container">
     <h3>Tell us about your donations</h3>
     <label><b>We would request you to submit your details.</b></label>
-    <form method="post">
+    <form method="post" enctype='multipart/form-data'>
       <div>
         <div>
-            <input placeholder="Full Name" type="text" value="Full Name">      <!-- TODO: Test Remove this later -->
+            <input name="fname" placeholder="Full Name" type="text" value="Full Name">      <!-- TODO: Test Remove this later -->
         </div>
         <div>
-            <input placeholder="Phone Number" type="tel" >      <!-- TODO: Test Remove this later -->
+            <input name="phone" placeholder="Phone Number" type="tel" >      <!-- TODO: Test Remove this later -->
         </div>
         <div>
-            <input placeholder="Email Address" type="email">       <!-- TODO: Test Remove this later -->
+            <input name="email" placeholder="Email Address" type="email">       <!-- TODO: Test Remove this later -->
         </div>
         <br><br>
 
         <div>
           <label><b>Country (single-select)</b></label>
-          <select id>
+          <select name="country" id>
                         <option disabled selected value="--">Select Your Country</option>
                         <option value="India">India</option>
                         <option value="United States">United States</option>
@@ -39,7 +39,7 @@
         <br>
         <div>
           <label><b>Category for Donation (multi-select)</b></label>
-          <select multiple>
+          <select name="itemType" multiple>
                         <option value="Clothes">Clothes</option>
                         <option value="Utensils">Utensils</option>
                         <option value="Stationary">Stationary</option>
@@ -60,14 +60,14 @@
         <div>
           <label><b>Description of item for donation</b></label>
           <div>
-            <textarea placeholder="Description of item for donation."></textarea>
+            <textarea name="additionalDesc" placeholder="Description of item for donation."></textarea>
           </div>
         </div>
         <br>
         <div>
           <label><b>Attach file</b></label>
           <div>
-            <input type="file" id>
+            <input name="file" type="file" id>
           </div>
         </div>
         <br>
@@ -78,13 +78,10 @@
     </form>
   </div>
 </body>
-<<<<<<< HEAD
-=======
 <style>
   a {
     color :#00bcd4;
     text-decoration: none;
   }
 </style>
->>>>>>> 33c2501ddbdf9143502667e354b3c482f06e7940
 </html>
