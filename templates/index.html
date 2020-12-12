@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to GoGreen</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
             </div>
         </nav>
 
-        <h1 class="big-title translate" data-speed="0.1">TAG LINE.</h1>
+        <h1 class="big-title translate" data-speed="0.1">We believe, You care.</h1>
 
         <img src="images/person.png" class="person translate" data-speed="-0.25" alt="">
         <img src="images/mountain1.png" class="mountain1 translate" data-speed="-0.2" alt="">
@@ -31,7 +32,7 @@
         <div class="shadow"></div>
 
         <div class="container">
-            <div class="content opacity">
+            <div class="content">
                 <h3 class="title">
                     About
                     <div class="border"></div>
@@ -39,62 +40,50 @@
                 <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis quos expedita ipsa, a quidem inventore voluptates debitis accusamus tenetur qui et voluptas dicta, culpa earum, doloribus odio consectetur consequuntur soluta quasi nobis! Deserunt voluptatum reiciendis iure expedita sequi quisquam laboriosam temporibus exercitationem.</p>
             </div>
 
-            <div class="imgContainer opacity">
+            <div class="imgContainer">
                 <img src="images/about img.jpg" alt="">
             </div>
         </div>
-
-        <div class="container">
-            <div class="content opacity">
-                <h3 class="title">
-                    Section 1
-                    <div class="border"></div>
-                </h3>
-                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis quos expedita ipsa, a quidem inventore voluptates debitis accusamus tenetur qui et voluptas dicta, culpa earum, doloribus odio consectetur consequuntur soluta quasi nobis! Deserunt voluptatum reiciendis iure expedita sequi quisquam laboriosam temporibus exercitationem.</p>
-            </div>
-
-            <div class="imgContainer opacity">
-                <img src="images/about img.jpg" alt="">
-            </div>
-        </div>
-
-
-        <div class="container">
-            <div class="content opacity">
-                <h3 class="title">
-                    Section 2
-                    <div class="border"></div>
-                </h3>
-                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis quos expedita ipsa, a quidem inventore voluptates debitis accusamus tenetur qui et voluptas dicta, culpa earum, doloribus odio consectetur consequuntur soluta quasi nobis! Deserunt voluptatum reiciendis iure expedita sequi quisquam laboriosam temporibus exercitationem.</p>
-            </div>
-
-            <div class="imgContainer opacity">
-                <img src="images/about img.jpg" alt="">
-            </div>
-        </div>
-
-
-
-        <div class="container">
-            <div class="content opacity">
-                <h3 class="title">
-                    Section 3
-                    <div class="border"></div>
-                </h3>
-                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis quos expedita ipsa, a quidem inventore voluptates debitis accusamus tenetur qui et voluptas dicta, culpa earum, doloribus odio consectetur consequuntur soluta quasi nobis! Deserunt voluptatum reiciendis iure expedita sequi quisquam laboriosam temporibus exercitationem.</p>
-            </div>
-
-            <div class="imgContainer opacity">
-                <img src="images/about img.jpg" alt="">
-            </div>
-        </div>
-
+        
         <div class="stats">
+            <div class="stathead">
+                <h3 >Some Statistical Data</h3>
+            
+                <p class="statintro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis quos expedita ipsa, a quidem inventore voluptates debitis accusamus tenetur qui et voluptas dicta, culpa earum, doloribus odio consectetur consequuntur soluta quasi nobis! Deserunt voluptatum reiciendis iure expedita sequi quisquam laboriosam temporibus exercitationem.</p>
+            
+                <div class="statcontent">
+                    <div class="carbon" data-aos="fade-right">
+                        <p id="carbontxt"> Daily CO<sub>2</sub> emission<img src="images/arrow up.png" data-aos="zoom-in-right"> <span>12345</span></p>
+                    </div>
+                    <div class="trees" data-aos="fade-left">
+                        <p id="treestxt" ><span>12345</span><img src="images/arrow down.png" data-aos="zoom-in-left">Daily Net Deforestation</p>
+                    </div>
+                    <div class="waste" data-aos="fade-right">
+                        <p id="wastetxt">Daily Solid Waste generation<img src="images/arrow up.png" data-aos="zoom-in-right"> <span>12345</span></p>
+                    </div>
+        
+                </div>
 
-            <h3 class="stathead">Some Statistical Data</h3>
+                <div class="statfooter" data-aos="zoom-in" data-aos-duration="1000">
+                    <p id="statfoot">All these numbers are <em>frightening!</em><br> Whats the solution now?</p>
+                </div>
+            </div>
+
         </div>
-    </section>
+        <div class="shop">
 
-    <script src="/jss/scrollEvent.js"></script>
+        </div>
+        
+    </section>
+    
+    <script src="jss/scrollEvent.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="jss/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1000
+        });
+    </script>
 </body>
 </html>

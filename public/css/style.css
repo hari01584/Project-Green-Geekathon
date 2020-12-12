@@ -114,7 +114,7 @@ nav .container{
 
 .bar{
     position: relative;
-    width: 1.2rem;
+    width: 1.2rem; 
     height: 3px;
     background-color: #fff;
     border-radius: 2px;
@@ -236,15 +236,15 @@ section .container > *{
 
 
 
-section .stats{
+section .stats, .shop{
     padding: 3rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
+    min-height: 250vh;
     box-shadow: 5px 5px 20px 1px #1f1d1e;
-    background: linear-gradient(rgba(15, 15, 15, 0.884), rgba(187, 184, 184, 0.212));
+    background: linear-gradient(rgba(15, 15, 15, 0.884), rgba(187, 184, 184, 0.212) 70%);
     background-color: rgb(230, 53, 121);
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
@@ -252,11 +252,160 @@ section .stats{
 
 .stathead
 {
-    bottom: 9rem;
+    top:-150px;
+    margin-top: 0rem;
+    min-width: 80vw;
+    min-height: fit-content;
+    /*bottom: 35%;*/
     font-weight: 600;
     font-size: 3rem;
     margin-bottom: 1rem;
     padding-bottom: .5rem;
+    padding-left: 2rem;
     position: relative;
     color: papayawhip;
+    text-shadow: 2px 2px 8px rgb(29, 28, 28);
+    
+    
+}
+
+.statintro
+{
+    width: 90vw;
+    margin-top: 40px;
+    padding: 0 0;
+    padding-right: 3%;
+    text-align: justify;
+    font-size: 20px;
+    text-shadow: 3px 3px 5px rgb(29, 28, 28);
+    font-weight: 500;
+    position: relative;
+    color: wheat;
+}
+
+.statcontent
+{
+    padding: 5px 20px;
+    margin: 50px ;
+    width: 80vw;
+    height: 100vh;
+    border: 5px black;
+    /*background: linear-gradient(135deg, rgba(255, 225, 0, 0.808), #789f0cc7); */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.63) 0%, rgba(0, 0, 0, 0.63) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    
+    border: rgb(238, 218, 35);
+    border-width: 5px;
+    border-spacing: 15px;
+    border-style: dashed;
+}
+
+.carbon, .trees, .waste
+{
+    display: flex;
+    align-self: center;
+    padding: 10px 10px;
+    margin: 30px 20px;
+    margin-bottom: 20px;
+    height: 30%;
+    width: 80%;
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    
+    box-shadow: 3px 3px 15px  rgb(37, 37, 37);
+
+}
+
+.trees
+{
+    right: -170px;
+    position: relative;
+}
+
+#carbontxt, #treestxt, #wastetxt
+{
+    
+    text-shadow: 2px 2px 15px #636060;
+    color: rgb(58, 57, 57);
+    top: -20px; 
+    
+    font-size: 35px; 
+    text-align: left;
+    position: relative;
+    left: 5%
+}
+#treestxt
+{
+    text-align: right;
+    padding-left: 5px;
+}
+#wastetxt
+{
+    font-size: 30px;
+    padding-left: 10px;
+    left: 0;
+
+}
+
+#carbontxt img, #treestxt img
+{
+    width: 180px;
+    margin: 0 12px;
+    cursor: pointer;
+    top: 80px;
+    position: relative;
+    
+}
+#treestxt img{
+    top: 10px;
+}
+#wastetxt img
+{
+    width: 180px;
+    margin: 0 12px;
+    cursor: pointer;
+    top: 80px;
+    position: relative;
+}
+
+#carbontxt span, #treestxt span, #wastetxt span
+{
+    bottom: 30px;
+    position: relative;
+    font-size: 45px;
+}
+
+#treestxt span{
+    bottom:-15px;
+}
+
+#wastetxt span
+{
+    left: -20px;
+    position: relative;
+}
+
+.shop{
+    background-color: #fff;
+    top:-180px;
+    position: relative;
+    box-shadow: 0px -20px 15px rgba(0, 0, 0, 0.562);
+    border-radius: 150px;
+    background-image: linear-gradient(to top, #96fbc4 0%, #fff952 100%);
+}
+
+.statfooter
+{
+    top:10vh;
+    position: relative;
+    text-align: center;
+    left:7%;
+    text-shadow: 2px 2px 10px rgb(10, 10, 10);
+    font-size: 50px;
+}
+
+#statfoot em
+{
+    color: rgb(36, 35, 35);
+    text-shadow: 2px 2px 15px rgb(221, 208, 30);
+    font-size: 60px;
 }
