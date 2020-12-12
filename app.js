@@ -1,9 +1,27 @@
+const { body,validationResult } = require('express-validator');
+
+
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+var multer = require('multer');
+var upload = multer();
+
 
 app.use(express.static('public'));
 
-// This responds with "Hello World" on the homepage
+
+app.use(bodyParser.json());
+
+// for parsing application/xwww-
+app.use(bodyParser.urlencoded({ extended: true }));
+//form-urlencoded
+
+// for parsing multipart/form-data
+app.use(upload.array());
+app.use(express.static('public'));
+
+
 app.get('/index', function (req, res) {
    console.log("Got a GET request for the homepage");
    res.sendFile( __dirname + "/templates/" + "index.html" );
@@ -15,11 +33,14 @@ app.get('/donateus', function (req, res) {
    res.sendFile( __dirname + "/templates/" + "donateus.html" );
 })
 
-// This responds a POST request for the homepage
-app.post('/', function (req, res) {
-   console.log("Got a POST request for the homepage");
-   res.send('Hello POST');
+
+app.post('/donateus', function (req, res) {
+  const username = req.body.username;
+
+  console.log(username);
+  res.end()
 })
+
 
 
 var server = app.listen(3000, function () {
