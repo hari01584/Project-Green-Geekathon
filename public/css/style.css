@@ -244,7 +244,7 @@ section .stats, .shop{
     justify-content: center;
     min-height: 250vh;
     box-shadow: 5px 5px 20px 1px #1f1d1e;
-    background: linear-gradient(rgba(15, 15, 15, 0.884), rgba(187, 184, 184, 0.212) 70%);
+    background: linear-gradient(rgba(236, 230, 230, 0.76), rgba(187, 184, 184, 0.212) 70%);
     background-color: rgb(230, 53, 121);
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
@@ -263,8 +263,9 @@ section .stats, .shop{
     padding-bottom: .5rem;
     padding-left: 2rem;
     position: relative;
-    color: papayawhip;
-    text-shadow: 2px 2px 8px rgb(29, 28, 28);
+    color: rgb(37, 37, 36);
+    text-shadow: 2px 2px 8px rgb(129, 129, 129);
+    
     
     
 }
@@ -277,10 +278,10 @@ section .stats, .shop{
     padding-right: 3%;
     text-align: justify;
     font-size: 20px;
-    text-shadow: 3px 3px 5px rgb(29, 28, 28);
+    text-shadow: 3px 3px 5px rgb(129, 128, 128);
     font-weight: 500;
     position: relative;
-    color: wheat;
+    color: rgb(37, 37, 36);
 }
 
 .statcontent
@@ -400,6 +401,7 @@ section .stats, .shop{
     text-align: center;
     left:7%;
     text-shadow: 2px 2px 10px rgb(10, 10, 10);
+    color: wheat;
     font-size: 50px;
 }
 
