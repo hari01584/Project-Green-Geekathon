@@ -35,9 +35,17 @@ app.get('/donateus', function (req, res) {
 
 
 app.post('/donateus', function (req, res) {
-  const username = req.body.username;
+  const errors = validationResult(req);
 
-  console.log(username);
+    if (errors.isEmpty()) {
+      const username = req.body.username;
+      console.log(username);
+    }
+    else {
+        // Data from form is valid.
+    }
+
+
   res.end()
 })
 

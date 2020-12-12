@@ -6,10 +6,10 @@ body {
 }
 
 .qfc-container {
-  --form-theme-color: #00bcd4;
+  --form-theme-color: #00a125;
   --form-bg-color: white;
   --input-text-color: black;
-  --button-hover: #4e5050;
+  --button-hover: #00a125;
   --input-bg-gray: #E2E5E5;
   border: 7px solid var(--form-theme-color);
   /* border-top: 7px solid var(--form-theme-color); */
@@ -361,7 +361,7 @@ input[type='submit']:hover {
     background: linear-gradient(#000, #359c71);
     border-radius: 6px;
   }
-  
+
 
 @media screen and (max-width: 900px) {
   .qfc-container {
