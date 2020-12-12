@@ -1,3 +1,6 @@
+const { body,validationResult } = require('express-validator');
+
+
 var express = require('express');
 var app = express();
 
