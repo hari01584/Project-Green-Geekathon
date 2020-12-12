@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to GoGreen</title>
+    <link rel="shortcut icon" href="../../favicon.ico" />
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
+    </head>
 <body>
-    <header>
+      <header>
         <nav>
             <div class="container">
                 <h3 class="logo"><a href="index.html" style="color: inherit; text-decoration: none;"><span>Project </span>GREEN</h3></a>
-                
+
             </div>
         </nav>
 
@@ -39,6 +40,18 @@
         <img src="images/mountain3.png" class="mountain3 translate" data-speed="0.3" alt="">
         <img src="images/sky.png" class="sky translate" data-speed="0.5" alt="">
     </header>
+
+    <div class="box"></div>
+    <div class="light"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(document).on('mousemove', function(e) {
+        $('.light').css({
+          left: e.pageX - 70,
+          top: e.pageY - 70,
+        });
+      });
+    </script>
 
     <section>
         <div class="shadow"></div>
