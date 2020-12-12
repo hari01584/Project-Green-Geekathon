@@ -104,10 +104,19 @@ nav .container{
 }
 
 
+<<<<<<< Updated upstream
 #side ul li
 {
     list-style: none;
     margin: 30px 20px;
+=======
+.bar{
+    position: relative;
+    width: 1.2rem;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+>>>>>>> Stashed changes
 }
 
 #side ul li a
@@ -195,10 +204,27 @@ section .container > *{
     opacity: 0;
 }
 
+.light {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.2) 0%
+  );
+
 @media (max-width: 850px){
     section .container{
         grid-template-columns: 1fr;
     }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#000, #359c71);
+  border-radius: 6px;
 }
 
 @media(max-width: 600px){
@@ -246,9 +272,9 @@ section .stats, .shop{
     position: relative;
     color: rgb(37, 37, 36);
     text-shadow: 2px 2px 8px rgb(129, 129, 129);
-    
-    
-    
+
+
+
 }
 
 .statintro
@@ -275,7 +301,7 @@ section .stats, .shop{
     /*background: linear-gradient(135deg, rgba(255, 225, 0, 0.808), #789f0cc7); */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.63) 0%, rgba(0, 0, 0, 0.63) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background-blend-mode: multiply,multiply;
-    
+
     border: rgb(238, 218, 35);
     border-width: 5px;
     border-spacing: 15px;
@@ -292,7 +318,7 @@ section .stats, .shop{
     height: 30%;
     width: 80%;
     background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-    
+
     box-shadow: 3px 3px 15px  rgb(37, 37, 37);
 
 }
@@ -305,12 +331,12 @@ section .stats, .shop{
 
 #carbontxt, #treestxt, #wastetxt
 {
-    
+
     text-shadow: 2px 2px 15px #636060;
     color: rgb(58, 57, 57);
-    top: -20px; 
-    
-    font-size: 35px; 
+    top: -20px;
+
+    font-size: 35px;
     text-align: left;
     position: relative;
     left: 5%
@@ -335,7 +361,7 @@ section .stats, .shop{
     cursor: pointer;
     top: 80px;
     position: relative;
-    
+
 }
 #treestxt img{
     top: 10px;
