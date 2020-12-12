@@ -27,6 +27,9 @@
                 </ul>
             </nav>
         </div>
+        <div id="menubtn">
+            <img src="images/menu.png" id="menu">
+        </div>
 
         <h1 class="big-title translate" data-speed="0.1">We believe, You care.</h1>
 
@@ -85,6 +88,22 @@
 
     </section>
 
+    <script>
+        var menubtn= document.getElementById("menubtn")
+        var sidenav= document.getElementById("sidenav")
+        var menu= document.getElementById("menu")
+
+        sidenav.style.right="-180px"
+        menubtn.onclick = function() {
+            if(sidenav.style.right=="-180px")
+            {sidenav.style.right="0";
+            menu.src = "images/close.png";}
+            else{
+                sidenav.style.right="-180px";
+                menu.src = "images/menu.png";
+            }
+        }
+    </script>
     <script src="jss/scrollEvent.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
