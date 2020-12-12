@@ -103,40 +103,21 @@ nav .container{
     color: #fff;
 }
 
-.hamburger-menu{
-    width: 1.55rem;
-    height: 1.5rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+
+#side ul li
+{
+    list-style: none;
+    margin: 30px 20px;
 }
 
-.bar{
-    position: relative;
-    width: 1.2rem; 
-    height: 3px;
-    background-color: #fff;
-    border-radius: 2px;
+#side ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
 }
 
-.bar:before, .bar:after{
-    content: '';
-    position: absolute;
-    width: 1.55rem;
-    height: 3px;
-    right: 0;
-    background-color: #fff;
-    border-radius: 2px;
-}
 
-.bar:before{
-    transform: translateY(-8px);
-}
-
-.bar:after{
-    transform: translateY(8px);
-}
 
 .big-title{
     position: absolute;
@@ -245,7 +226,7 @@ section .stats, .shop{
     min-height: 250vh;
     box-shadow: 5px 5px 20px 1px #1f1d1e;
     background: linear-gradient(rgba(236, 230, 230, 0.76), rgba(187, 184, 184, 0.212) 70%);
-    background-color: rgb(230, 53, 121);
+    background-color: rgb(241, 14, 101);
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
 }
@@ -389,7 +370,7 @@ section .stats, .shop{
     background-color: #fff;
     top:-180px;
     position: relative;
-    box-shadow: 0px -20px 15px rgba(0, 0, 0, 0.562);
+    box-shadow: 0px -15px 15px rgba(0, 0, 0, 0.562);
     border-radius: 150px;
     background-image: linear-gradient(to top, #96fbc4 0%, #fff952 100%);
 }
