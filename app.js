@@ -28,31 +28,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(upload.array());
 app.use(express.static('public'));
 
-const storage = multer.diskStorage({
-    destination: function(req, file, cb) {
-        cb(null, 'uploads/');
-    },
-
-    // By default, multer removes file extensions so let's add them back
-    filename: function(req, file, cb) {
-        cb(null, __dirname + "/records/images/"+file.fieldname + '-' + Date.now() + path.extname(file.originalname));
-    }
-});
-
-const imageFilter = function(req, file, cb) {
-    // Accept images only
-    if (!file.originalname.match(/\.(jpg|JPG|jpeg|JPEG|png|PNG|gif|GIF)$/)) {
-        req.fileValidationError = 'Only image files are allowed!';
-        return cb(new Error('Only image files are allowed!'), false);
-    }
-    cb(null, true);
-};
 
 app.get('/index', function (req, res) {
    console.log("Got a GET request for the homepage");
    res.sendFile( __dirname + "/templates/" + "index.html" );
 })
 
+app.get('/livemap', function (req, res) {
+   console.log("Got a GET request for the homepage");
+   res.sendFile( __dirname + "/templates/" + "livemaps.html" );
+})
 
 app.get('/donateus', function (req, res) {
    console.log("Got a GET request for the homepage");
@@ -107,8 +92,6 @@ app.post('/donateus', function (req, res) {
     }
 });
 
-  let upload = multer({ storage: storage, fileFilter: imageFilter }).single('file');
-  upload(req, res, function(err) {});
 
     }
     else {

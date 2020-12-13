@@ -399,6 +399,18 @@ section .stats, .shop, .intro{
 
 }
 
+
+.intro{
+    background-color: #fff;
+    top:0;
+    position: relative;
+    box-shadow: 0px -15px 15px rgba(0, 0, 0, 0.562);
+    border-radius: 150px;
+    background-image: linear-gradient(to top, #96fbc4 0%, #fff952 100%);
+}
+
+
+
 .statfooter
 {
     top:10vh;
@@ -474,6 +486,9 @@ section .stats, .shop, .intro{
 .introimg img
 {
     border-radius: 30px;
-    height:700px;
-    width: 700px;
+}
+
+.introtxt
+{
+    background-color: rgba(128, 128, 128, 0.726);
 }
