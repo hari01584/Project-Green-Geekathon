@@ -222,7 +222,7 @@ section .container > *{
 
 
 
-section .stats, .shop{
+section .stats, .shop, .intro{
     padding: 3rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -251,9 +251,9 @@ section .stats, .shop{
     position: relative;
     color: rgb(37, 37, 36);
     text-shadow: 2px 2px 8px rgb(129, 129, 129);
-    
-    
-    
+
+
+
 }
 
 .statintro
@@ -280,7 +280,7 @@ section .stats, .shop{
     /*background: linear-gradient(135deg, rgba(255, 225, 0, 0.808), #789f0cc7); */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.63) 0%, rgba(0, 0, 0, 0.63) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background-blend-mode: multiply,multiply;
-    
+
     border: rgb(238, 218, 35);
     border-width: 5px;
     border-spacing: 15px;
@@ -297,7 +297,7 @@ section .stats, .shop{
     height: 30%;
     width: 80%;
     background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-    
+
     box-shadow: 3px 3px 15px  rgb(37, 37, 37);
 
 }
@@ -310,12 +310,12 @@ section .stats, .shop{
 
 #carbontxt, #treestxt, #wastetxt
 {
-    
+
     text-shadow: 2px 2px 15px #ada6a6;
     color: rgb(58, 57, 57);
-    top: -20px; 
-    
-    font-size: 35px; 
+    top: -20px;
+
+    font-size: 35px;
     text-align: left;
     position: relative;
     left: 5%
@@ -341,7 +341,7 @@ section .stats, .shop{
     cursor: pointer;
     top: 80px;
     position: relative;
-    
+
 }
 #treestxt img{
     top: 10px;
@@ -415,7 +415,7 @@ section .stats, .shop{
     background: linear-gradient(rgba(41, 41, 41, 0.884),rgba(63, 62, 62, 0.849)) 50%;
     z-index: 40;
     transition: 0.5s;
-    
+
 }
 
 #side ul li
@@ -443,14 +443,14 @@ section .stats, .shop{
     border-radius: 3px;
     z-index: 41;
     cursor: pointer;
-    
+
 }
 
 #menubtn img
 {
     width: 20px;
     margin-top: 15px;
-    
+
 }
 .statpoints
 {

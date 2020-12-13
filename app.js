@@ -65,8 +65,8 @@ app.get('/fragment_intro', function (req, res) {
 })
 
 app.get('/fragment_anaylysis', function (req, res) {
-   console.log("Got a GET request for the homepage");
-   res.sendFile( __dirname + "/templates/" + "fragment_anaylysis.html" );
+   console.log("Got a GET request for the fragment_anaylysis");
+   res.sendFile( __dirname + "/templates/" + "fragment_anaylsis.html" );
 })
 
 app.get('/fragment_shop', function (req, res) {
