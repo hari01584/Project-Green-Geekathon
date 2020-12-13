@@ -228,18 +228,24 @@ section .stats, .shop, .intro{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
-    min-height: 250vh;
+    min-height: 320vh;
     box-shadow: 5px 5px 20px 1px #1f1d1e;
     background: linear-gradient(rgba(236, 230, 230, 0.76), rgba(187, 184, 184, 0.212) 70%);
     background-color: rgb(241, 14, 101);
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+    border-radius: 10%;
+    
+}
+
+.stats{
+    top:-150px;
+    position: relative;
 }
 
 .stathead
 {
-    top:-150px;
-    margin-top: 0rem;
+    top:-55vh;
+    position: relative;
+    margin-top: 50px;
     min-width: 80vw;
     min-height: fit-content;
     /*bottom: 35%;*/
@@ -248,7 +254,6 @@ section .stats, .shop, .intro{
     margin-bottom: 1rem;
     padding-bottom: .5rem;
     padding-left: 2rem;
-    position: relative;
     color: rgb(37, 37, 36);
     text-shadow: 2px 2px 8px rgb(129, 129, 129);
 
@@ -380,11 +385,18 @@ section .stats, .shop, .intro{
 
 .shop{
     background-color: #fff;
-    top:-180px;
+    top:-280px;
     position: relative;
     box-shadow: 0px -15px 15px rgba(0, 0, 0, 0.562);
     border-radius: 150px;
     background-image: linear-gradient(to top, #96fbc4 0%, #fff952 100%);
+}
+.intro{
+    box-shadow: 0px -15px 15px rgba(0, 0, 0, 0.562);
+    border-radius: 150px;
+    background-image: linear-gradient(to top, #96fbc4 0%, #fff952 100%);
+    min-height: 130vh;
+
 }
 
 .statfooter
@@ -454,6 +466,8 @@ section .stats, .shop, .intro{
 }
 .statpoints
 {
+    top: 30px;
+    position: relative;
     font-size: x-large;
     margin-left: 10vw;
 }
