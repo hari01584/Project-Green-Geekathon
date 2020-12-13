@@ -486,6 +486,9 @@ section .stats, .shop, .intro{
 .introimg img
 {
     border-radius: 30px;
-    height:700px;
-    width: 700px;
+}
+
+.introtxt
+{
+    background-color: rgba(128, 128, 128, 0.726);
 }
