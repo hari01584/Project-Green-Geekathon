@@ -233,7 +233,7 @@ section .stats, .shop, .intro{
     background: linear-gradient(rgba(236, 230, 230, 0.76), rgba(187, 184, 184, 0.212) 70%);
     background-color: rgb(241, 14, 101);
     border-radius: 10%;
-    
+
 }
 
 .stats{
@@ -243,7 +243,7 @@ section .stats, .shop, .intro{
 
 .stathead
 {
-    top:-55vh;
+
     position: relative;
     margin-top: 50px;
     min-width: 80vw;
@@ -254,6 +254,7 @@ section .stats, .shop, .intro{
     margin-bottom: 1rem;
     padding-bottom: .5rem;
     padding-left: 2rem;
+    padding-bottom: 400px;
     color: rgb(37, 37, 36);
     text-shadow: 2px 2px 8px rgb(129, 129, 129);
 
@@ -402,8 +403,8 @@ section .stats, .shop, .intro{
 
 .intro{
     background-color: #fff;
-    top:0;
-    position: relative;
+
+
     box-shadow: 0px -15px 15px rgba(0, 0, 0, 0.562);
     border-radius: 150px;
     background-image: linear-gradient(to top, #96fbc4 0%, #fff952 100%);
@@ -486,9 +487,10 @@ section .stats, .shop, .intro{
 .introimg img
 {
     border-radius: 30px;
+    margin-left: -5px;
 }
 
 .introtxt
 {
-    background-color: rgba(128, 128, 128, 0.726);
+
 }
