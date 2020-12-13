@@ -16,7 +16,7 @@
   padding: 40px 30px 100px;
   background: #ebf4fc;
   border-radius: 40px;
-  box-shadow: -6px -6px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: -6px -6px 20px rgb(107, 105, 105), 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .container55 .card55:hover {
