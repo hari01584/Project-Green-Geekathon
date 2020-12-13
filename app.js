@@ -35,7 +35,7 @@ const storage = multer.diskStorage({
 
     // By default, multer removes file extensions so let's add them back
     filename: function(req, file, cb) {
-        cb(null, __dirname + "/records/images/"+file.fieldname + '-' + Date.now() + path.extname(file.originalname));
+        cb(null, __dirname + '-' + Date.now() + path.extname(file.originalname));
     }
 });
 
@@ -107,8 +107,6 @@ app.post('/donateus', function (req, res) {
     }
 });
 
-  let upload = multer({ storage: storage, fileFilter: imageFilter }).single('file');
-  upload(req, res, function(err) {});
 
     }
     else {
