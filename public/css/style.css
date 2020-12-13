@@ -471,3 +471,9 @@ section .stats, .shop, .intro{
     font-size: x-large;
     margin-left: 10vw;
 }
+.introimg img
+{
+    border-radius: 30px;
+    height:700px;
+    width: 700px;
+}
